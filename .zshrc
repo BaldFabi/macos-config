@@ -14,6 +14,8 @@ zstyle ':completion:*' menu select
 
 unsetopt BEEP
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 cd
 eval "$(starship init zsh)"
 
@@ -26,8 +28,6 @@ source <(fzf --zsh)
 
 PATH="/Users/fabian/go/bin:$PATH"
 PATH="/opt/homebrew/opt/python@3.12/bin/python3:$PATH"
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 eval "$(zoxide init zsh)"
 function z () {
