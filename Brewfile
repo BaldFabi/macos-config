@@ -56,6 +56,7 @@ cask "spotify"
 cask "the-unarchiver"
 cask "thunderbird"
 cask "vlc"
+cask "sonos"
 mas "WhatsApp Messenger", id: 310633997
 mas "Goodnotes 6", id: 1444383602
 mas "Microsoft To Do", id: 1274495053
