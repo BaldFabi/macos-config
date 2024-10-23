@@ -13,6 +13,7 @@ backup-configs:
 	cp ~/Library/Preferences/com.knollsoft.Rectangle.plist .
 	cp ~/.zshrc .
 	cp ~/.tmux.conf .
+	cp ~/Library/Preferences/com.ospfranco.sol.plist .
 
 restore-configs:
 	cp karabiner.json ~/.config/karabiner/karabiner.json
@@ -20,6 +21,7 @@ restore-configs:
 	cp com.knollsoft.Rectangle.plist ~/Library/Preferences/com.knollsoft.Rectangle.plist
 	cp .zshrc ~/.zshrc
 	cp .tmux.conf ~/.tmux.conf
+	cp com.ospfranco.sol.plist ~/Library/Preferences/com.ospfranco.sol.plist
 
 	curl -fsSL https://git.io/antigen -o ~/.antigen.zsh
 
