@@ -31,3 +31,5 @@ brew:
 	./install.sh
 	rm install.sh
 
+settings:
+	./settings.sh
