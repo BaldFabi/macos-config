@@ -1,22 +1,11 @@
-format="$hostname$directory$git_branch$git_status$golang$python$nodejs$terraform$cmd_duration$fill$sudo$memory_usage$time$line_break$character"
+format="$directory$git_branch$git_status$python$fill$sudo$fill$cmd_duration$fill$memory_usage$localip$line_break$character"
 
 [fill]
 symbol = " "
 style = ""
 
-[hostname]
-ssh_only = false
-format =  "[ $hostname ](bg:#dbff00 black bold)"
-disabled = false
-
 [directory]
-format = "[ 📁 $path ](bg:white black bold)"
-
-[memory_usage]
-disabled = false
-threshold = -1
-symbol = " "
-format = "[ $ram ](bg:#ff69b4 black bold)"
+format = "(#403d52 bold)[ $path](#e0def4 bold)"
 
 [status]
 symbol = "🔴"
@@ -25,32 +14,33 @@ map_symbol = true
 disabled = false
 
 [git_branch]
-symbol = "🌱 "
-format = "[ $symbol$branch ](bg:#dbff00 black bold)"
+format = "[ | ](#403d52 bold)[ $branch](#f6c177 bold)"
 
 [git_status]
-format = "([\\[$all_status$ahead_behind\\] ](bg:#dbff00 red bold))"
-
-[golang]
-format = "[ $symbol$version ](bg:white black bold)"
+format = "( [\\[$all_status$ahead_behind\\]](#eb6f92 bold))"
 
 [python]
-format = "[ $symbol$version( $virtualenv) ](bg:white black bold)"
-
-[nodejs]
-format = "[ $symbol$version ](bg:white black bold)"
-
-[terraform]
-format = "[ $symbol$workspace ](bg:white black bold)"
+format = "[ | ](#403d52 bold)[ $virtualenv](#f6c177 bold)"
 
 [sudo]
 disabled = false
 allow_windows = true
-format = "[ $symbol](bg:white black bold)"
+symbol = ""
+format = "[$symbol](#6e6a86 bold)"
 
 [cmd_duration]
-format = "[ ⏰ $duration ](bg:blue white bold)"
+format = "[󰀠 $duration](#6e6a86 bold)"
 
-[time]
+[memory_usage]
 disabled = false
-format = "$fill[ 🕓 $time ](bg:white black bold)"
+threshold = -1
+format = "[ $ram](#f6c177 bold)"
+
+[localip]
+format = "[ | ](#403d52 bold)[ $localipv4](#f6c177 bold)"
+ssh_only = false
+disabled = false
+
+[character]
+success_symbol = "[➜](#e0def4 bold)"
+error_symbol = "[✗](#eb6f92 bold)"
