@@ -14,6 +14,7 @@ backup-configs:
 	cp ~/.zshrc .
 	cp ~/.tmux.conf .
 	cp ~/Library/Preferences/com.ospfranco.sol.plist .
+	cp ~/.config/starship.toml .
 
 restore-configs:
 	cp karabiner.json ~/.config/karabiner/karabiner.json
@@ -22,8 +23,9 @@ restore-configs:
 	cp .zshrc ~/.zshrc
 	cp .tmux.conf ~/.tmux.conf
 	cp com.ospfranco.sol.plist ~/Library/Preferences/com.ospfranco.sol.plist
+	cp starship.toml ~/.config/starship.toml
 
-	curl -fsSL https://git.io/antigen -o ~/.antigen.zsh
+	curl -fsSL https://git.io/antigen -o ~/antigen.zsh
 
 brew:
 	curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh -o install.sh

@@ -11,3 +11,9 @@ The repository also contains configuration files for the following tools:
 - Karabiner-Elements
 - rectangle
 - iterm2
+- sol
+
+## Requirements
+
+Make sure `git` is installed on your machine.
+Just run `git` one time in your terminal and follow the instructions to install it.
