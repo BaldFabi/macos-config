@@ -12,3 +12,4 @@ cp com.ospfranco.sol.plist ~/Library/Preferences/com.ospfranco.sol.plist
 cp starship.toml ~/.config/starship.toml
 
 curl -fsSL https://git.io/antigen -o ~/antigen.zsh
+curl -fsSL https://raw.githubusercontent.com/rose-pine/fzf/refs/heads/main/dist/rose-pine.sh -o ~/.config/fzf-rose-pine.sh

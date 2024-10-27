@@ -24,6 +24,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
+source ~/.config/fzf-rose-pine.sh
 source <(fzf --zsh)
 
 PATH="/Users/fabian/go/bin:$PATH"
