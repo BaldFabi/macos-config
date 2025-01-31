@@ -29,6 +29,7 @@ brew "fzf"
 brew "podman"
 brew "docker"
 brew "docker-compose"
+brew "templ"
 cask "aldente"
 cask "alt-tab"
 cask "appcleaner"
@@ -64,3 +65,4 @@ mas "Goodnotes 6", id: 1444383602
 mas "Microsoft To Do", id: 1274495053
 mas "Affinity Designer 2", id: 1616831348
 mas "Affinity Photo 2: Image Editor", id: 1616822987
+mas "Home Assistant", id: 1099568401
