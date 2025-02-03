@@ -462,6 +462,14 @@
                             "to": [{ "key_code": "non_us_backslash" }]
                         }
                     ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 2097,
+                        "vendor_id": 13364
+                    },
+                    "ignore": true
                 }
             ],
             "fn_function_keys": [
