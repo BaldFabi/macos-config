@@ -71,4 +71,5 @@ if hostname == "toshiro"
     mas "Affinity Designer 2", id: 1616831348
     mas "Affinity Photo 2: Image Editor", id: 1616822987
 else
+    cask "slack"
 end
