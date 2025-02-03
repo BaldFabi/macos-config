@@ -12,6 +12,8 @@ defaults write com.apple.driver.AppleMultitouchTrackpad Clicking -bool true
 defaults write -g InitialKeyRepeat -int 15 
 defaults write -g KeyRepeat -int 2
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
 if ! command -v prettier 2>&1 >/dev/null
 then
