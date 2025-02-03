@@ -11,6 +11,7 @@ defaults write com.apple.menuextra.battery ShowPercent -bool true
 defaults write com.apple.driver.AppleMultitouchTrackpad Clicking -bool true
 defaults write -g InitialKeyRepeat -int 15 
 defaults write -g KeyRepeat -int 2
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
 if ! command -v prettier 2>&1 >/dev/null
 then
