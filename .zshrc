@@ -46,4 +46,4 @@ alias n='nvim'
 
 export EDITOR=vim
 
-[[ ! -v TMUX ]] && tmux
+[[ ! -v TMUX ]] && tmux && exit
