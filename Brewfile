@@ -58,6 +58,7 @@ cask "thunderbird"
 cask "vlc"
 cask "sonos"
 cask "pgadmin4"
+cask "visual-studio-code"
 mas "Bitwarden", id: 1352778147
 mas "WhatsApp Messenger", id: 310633997
 mas "Goodnotes 6", id: 1444383602
