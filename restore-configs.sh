@@ -11,6 +11,8 @@ cp com.lwouis.alt-tab-macos.plist ~/Library/Preferences/com.lwouis.alt-tab-macos
 cp .zshrc ~/.zshrc
 cp .tmux.conf ~/.tmux.conf
 cp starship.toml ~/.config/starship.toml
+
+mkdir -p ~/.config/wezterm
 cp wezterm.lua ~/.config/wezterm/wezterm.lua
 
 curl -fsSL https://git.io/antigen -o ~/antigen.zsh
