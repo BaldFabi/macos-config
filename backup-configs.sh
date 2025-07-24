@@ -8,4 +8,4 @@ cp ~/.zshrc .
 cp ~/.tmux.conf .
 cp ~/Library/Preferences/com.ospfranco.sol.plist .
 cp ~/.config/starship.toml .
-cp ~/.config/wezterm/wezterm.lua .
+#cp ~/.config/wezterm/wezterm.lua .

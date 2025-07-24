@@ -12,8 +12,8 @@ cp .zshrc ~/.zshrc
 cp .tmux.conf ~/.tmux.conf
 cp starship.toml ~/.config/starship.toml
 
-mkdir -p ~/.config/wezterm
-cp wezterm.lua ~/.config/wezterm/wezterm.lua
+#mkdir -p ~/.config/wezterm
+#cp wezterm.lua ~/.config/wezterm/wezterm.lua
 
 curl -fsSL https://git.io/antigen -o ~/antigen.zsh
 curl -fsSL https://raw.githubusercontent.com/rose-pine/fzf/refs/heads/main/dist/rose-pine.sh -o ~/.config/fzf-rose-pine.sh
