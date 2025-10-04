@@ -18,8 +18,9 @@ if [ ! -f ~/.config/fzf-rose-pine.sh ]; then
     curl -sSL https://raw.githubusercontent.com/rose-pine/fzf/refs/heads/main/dist/rose-pine.sh -o ~/.config/fzf-rose-pine.sh
 fi
 
-if [ ! -f ~/.config/eza/theme.yml ]; then
+if [ -L ~/.config/eza/theme.yml ] || [ ! -f ~/.config/eza/theme.yml ]; then
     mkdir -p ~/.config/eza
+    rm -f ~/.config/eza/theme.yml
     curl -sSL https://raw.githubusercontent.com/eza-community/eza-themes/refs/heads/main/themes/rose-pine.yml -o .config/eza/theme.yml
 fi
 
