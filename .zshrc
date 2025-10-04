@@ -1,3 +1,5 @@
+SYSTEM=$(uname -s | tr '[:upper:]' '[:lower:]')
+
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
@@ -12,12 +14,25 @@ autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
 
-unsetopt BEEP
+if [ ! -f ~/.config/fzf-rose-pine.sh ]; then
+    curl -sSL https://raw.githubusercontent.com/rose-pine/fzf/refs/heads/main/dist/rose-pine.sh -o ~/.config/fzf-rose-pine.sh
+fi
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ $SYSTEM = "darwin" ]; then
+    unsetopt BEEP
+
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+
+    PATH="/Users/fabian/go/bin:$PATH"
+    PATH="/opt/homebrew/opt/python@3.12/bin/python3:$PATH"
+fi
 
 cd
 eval "$(starship init zsh)"
+
+if [ ! -f ~/antigen.zsh ]; then
+    curl -L git.io/antigen > ~/antigen.zsh
+fi
 
 source ~/antigen.zsh
 antigen bundle zsh-users/zsh-autosuggestions
@@ -26,9 +41,6 @@ antigen apply
 
 source ~/.config/fzf-rose-pine.sh
 source <(fzf --zsh)
-
-PATH="/Users/fabian/go/bin:$PATH"
-PATH="/opt/homebrew/opt/python@3.12/bin/python3:$PATH"
 
 eval "$(zoxide init zsh)"
 function z () {
@@ -46,4 +58,4 @@ alias n='nvim'
 
 export EDITOR=vim
 
-[[ ! -v TMUX ]] && tmux && exit
+[[ ! -v TMUX && ! -v SSH_TTY ]] && tmux && exit
