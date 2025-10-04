@@ -18,6 +18,11 @@ if [ ! -f ~/.config/fzf-rose-pine.sh ]; then
     curl -sSL https://raw.githubusercontent.com/rose-pine/fzf/refs/heads/main/dist/rose-pine.sh -o ~/.config/fzf-rose-pine.sh
 fi
 
+if [ ! -f ~/.config/eza/theme.yml ]; then
+    mkdir -p ~/.config/eza
+    curl -sSL https://raw.githubusercontent.com/eza-community/eza-themes/refs/heads/main/themes/rose-pine.yml -o .config/eza/theme.yml
+fi
+
 if [ $SYSTEM = "darwin" ]; then
     unsetopt BEEP
 
@@ -25,6 +30,8 @@ if [ $SYSTEM = "darwin" ]; then
 
     PATH="/Users/fabian/go/bin:$PATH"
     PATH="/opt/homebrew/opt/python@3.12/bin/python3:$PATH"
+
+    export EZA_CONFIG_DIR=~/.config/eza
 fi
 
 cd
