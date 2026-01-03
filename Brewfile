@@ -60,11 +60,6 @@ cask "vlc"
 cask "sonos"
 cask "pgadmin4"
 cask "visual-studio-code"
-mas "Bitwarden", id: 1352778147
-mas "WhatsApp Messenger", id: 310633997
-mas "Goodnotes 6", id: 1444383602
-mas "Microsoft To Do", id: 1274495053
-mas "Home Assistant", id: 1099568401
 
 hostname = `hostname -s`.strip
 
@@ -72,8 +67,6 @@ hostname = `hostname -s`.strip
 if hostname == "toshiro"
     cask "keepassxc"
     cask "google-chrome"
-    mas "Affinity Designer 2", id: 1616831348
-    mas "Affinity Photo 2: Image Editor", id: 1616822987
 else
     cask "microsoft-teams"
     cask "slack"
