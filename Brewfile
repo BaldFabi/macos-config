@@ -1,6 +1,4 @@
 tap "hashicorp/tap"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "homeport/tap"
 brew "python@3.14"
 brew "yq"
@@ -46,7 +44,7 @@ cask "inkscape"
 cask "iterm2"
 cask "kap"
 cask "karabiner-elements"
-cask "microsoft-remote-desktop"
+cask "windows-app"
 cask "mysqlworkbench"
 cask "nextcloud"
 cask "notion"
@@ -64,7 +62,7 @@ cask "visual-studio-code"
 hostname = `hostname -s`.strip
 
 # unless could be also a viable alternative
-if hostname == "toshiro"
+if hostname == "toshiro" or hostname == "mac-mini"
     cask "keepassxc"
     cask "google-chrome"
 else

@@ -7,7 +7,7 @@ mas "Home Assistant", id: 1099568401
 hostname = `hostname -s`.strip
 
 # unless could be also a viable alternative
-if hostname == "toshiro"
+if hostname == "toshiro" or hostname == "mac-mini"
     mas "Affinity Designer 2", id: 1616831348
     mas "Affinity Photo 2: Image Editor", id: 1616822987
 end
