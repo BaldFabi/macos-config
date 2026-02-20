@@ -61,7 +61,7 @@ cask "vlc"
 cask "sonos"
 cask "pgadmin4"
 cask "visual-studio-code"
-cask "yaak"
+cask "bruno"
 
 hostname = `hostname -s`.strip
 
