@@ -33,7 +33,4 @@ mkdir -p ~/Library/Application\ Support/k9s/skins
 yq -i '.k9s.ui.skin = "rose-pine"' ~/Library/Application\ Support/k9s/config.yaml
 curl -sSL https://raw.githubusercontent.com/derailed/k9s/refs/heads/master/skins/rose-pine.yaml -o ~/Library/Application\ Support/k9s/skins/rose-pine.yaml
 
-mkdir -p ~/.config/ghostty/themes
-curl -sSL https://raw.githubusercontent.com/rose-pine/ghostty/refs/heads/main/dist/rose-pine -o ~/.config/ghostty/themes/rose-pine
-
 git config --global core.editor "nvim"
