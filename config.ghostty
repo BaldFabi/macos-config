@@ -1,0 +1,8 @@
+theme = rose-pine
+
+font-size = 19
+font-thicken = true
+font-family = FiraCode Nerd Font Mono
+
+adjust-cell-width = "-5%"
+adjust-cell-height = "5%"

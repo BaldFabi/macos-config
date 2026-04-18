@@ -63,6 +63,7 @@ cask "sonos"
 cask "pgadmin4"
 cask "visual-studio-code"
 cask "bruno"
+cask "ghostty"
 
 hostname = `hostname -s`.strip
 
