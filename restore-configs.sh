@@ -14,7 +14,7 @@ cp starship.toml ~/.config/starship.toml
 
 #mkdir -p ~/.config/wezterm
 #cp wezterm.lua ~/.config/wezterm/wezterm.lua
-mkdir -p $HOME/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty
+mkdir -p $HOME/Library/Application\ Support/com.mitchellh.ghostty
 cp config.ghostty $HOME/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty
 mkdir -p ~/.config/ghostty/themes
 curl -sSL https://raw.githubusercontent.com/rose-pine/ghostty/refs/heads/main/dist/rose-pine -o ~/.config/ghostty/themes/rose-pine
