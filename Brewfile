@@ -21,9 +21,9 @@ brew "starship"
 brew "tmux"
 brew "wget"
 brew "zoxide"
-brew "hashicorp/tap/terraform"
-brew "hashicorp/tap/packer"
-brew "homeport/tap/havener"
+brew "hashicorp/tap/terraform", trusted: true
+brew "hashicorp/tap/packer", trusted: true
+brew "homeport/tap/havener", trusted: true
 brew "fzf"
 brew "docker-compose"
 brew "templ"
@@ -31,7 +31,7 @@ brew "d2"
 brew "presenterm"
 brew "gh"
 brew "restic"
-brew "anomalyco/tap/opencode"
+brew "anomalyco/tap/opencode", trusted: true
 brew "argon2"
 brew "lazygit"
 brew "templ"
