@@ -64,6 +64,6 @@ alias vim='nvim'
 alias v='nvim'
 alias n='nvim'
 
-export EDITOR=vim
+export EDITOR=nvim
 
 [[ ! -v TMUX && ! -v SSH_TTY ]] && tmux && exit
