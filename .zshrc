@@ -63,6 +63,7 @@ alias cd='z'
 alias vim='nvim'
 alias v='nvim'
 alias n='nvim'
+alias y='yazi'
 
 export EDITOR=nvim
 

@@ -21,3 +21,11 @@ curl -sSL https://raw.githubusercontent.com/rose-pine/ghostty/refs/heads/main/di
 
 curl -fsSL https://git.io/antigen -o ~/antigen.zsh
 curl -fsSL https://raw.githubusercontent.com/rose-pine/fzf/refs/heads/main/dist/rose-pine.sh -o ~/.config/fzf-rose-pine.sh
+
+mkdir -p ~/.config/yazi/flavors/rose-pine.yazi/
+cp yazi.toml ~/.config/yazi/theme.toml
+curl -fsSL https://raw.githubusercontent.com/rose-pine/yazi/refs/heads/main/themes/rose-pine.toml -o yazi-theme.toml
+cat yazi-theme.toml >> ~/.config/yazi/theme.toml
+rm yazi-theme.toml
+curl -fsSL https://raw.githubusercontent.com/rose-pine/yazi/refs/heads/main/flavors/rose-pine.yazi/flavor.toml -o ~/.config/yazi/flavors/rose-pine.yazi/flavor.toml
+curl -fsSL https://raw.githubusercontent.com/rose-pine/yazi/refs/heads/main/flavors/rose-pine.yazi/tmtheme.xml -o ~/.config/yazi/flavors/rose-pine.yazi/tmtheme.xml

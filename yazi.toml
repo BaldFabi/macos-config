@@ -1,0 +1,9 @@
+[flavor]
+dark = "rose-pine"
+
+[mgr]
+sort_by = "alphabetical"
+linemode = "size"
+show_hidden = true
+show_symlink = true
+scrolloff = 10
