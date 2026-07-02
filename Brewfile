@@ -35,6 +35,7 @@ brew "anomalyco/tap/opencode", trusted: true
 brew "argon2"
 brew "lazygit"
 brew "templ"
+brew "yazi"
 cask "aldente"
 cask "alt-tab"
 cask "appcleaner"
