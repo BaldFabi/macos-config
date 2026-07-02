@@ -64,6 +64,7 @@ alias vim='nvim'
 alias v='nvim'
 alias n='nvim'
 alias y='yazi'
+alias lg='lazygit'
 
 export EDITOR=nvim
 
