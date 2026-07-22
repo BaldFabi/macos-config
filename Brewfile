@@ -78,4 +78,5 @@ if hostname == "toshiro" or hostname == "mac-mini"
 else
     cask "microsoft-teams"
     cask "slack"
+    cask "TheBoredTeam/boring-notch/boring-notch", trusted: true
 end
