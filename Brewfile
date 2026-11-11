@@ -69,6 +69,7 @@ cask "pgadmin4"
 cask "visual-studio-code"
 cask "bruno"
 cask "ghostty"
+cask "slack"
 
 hostname = `hostname -s`.strip
 
@@ -78,6 +79,5 @@ if hostname == "toshiro" or hostname == "mac-mini"
     cask "google-chrome"
 else
     cask "microsoft-teams"
-    cask "slack"
     cask "TheBoredTeam/boring-notch/boring-notch", trusted: true
 end
